@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, config, ... }:
 {
   home.packages = with pkgs;
     [
@@ -52,11 +52,16 @@
 
       yq
       git-credential-manager
+      git-crypt
       keycastr
       rectangle
       home-manager
       nil
+      google-chrome
+      postman
+      pgadmin4
 
+      
     ];
 }
 

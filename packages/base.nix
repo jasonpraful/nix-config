@@ -1,6 +1,6 @@
 { pkgs, ... }:
 {
-  environment.systemPackages = with pkgs;
+  home.packages = with pkgs;
     [
       # Config for VSCode - Synced to Cloud
       vscode
@@ -40,11 +40,7 @@
       k9s
 
       pyenv
-      python39
-      python310
-      python311
       python312
-      python313
 
       sshpass
       stripe-cli

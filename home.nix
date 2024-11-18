@@ -7,13 +7,13 @@
     sessionVariables = {
       EDITOR = "vim";
     };
+    stateVersion = "24.11";
   };
 
   imports = [
-    "./fonts"
-    "./programs/base.nix"
-    "./programs/git.nix"
+    ./fonts
+    ./packages/base.nix
+    ./packages/git.nix
   ];
 
-  stateVersion = 5;
 }

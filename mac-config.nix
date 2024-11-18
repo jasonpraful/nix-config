@@ -26,12 +26,6 @@
     };
   };
 
-
-  fonts.packages = with pkgs; [
-    (nerdfonts.override { fonts = [ "GeistMono" ]; })
-  ];
-
-
   networking.hostName = machine.hostname;
   users.users.${machine.username}.home = machine.homedir;
 
@@ -39,7 +33,7 @@
     useGlobalPkgs = true;
     useUserPackages = true;
     users."${machine.username}" = {
-      imports = [ "./home.nix" ];
+      imports = [ ./home.nix ];
     };
     extraSpecialArgs = {
       inherit machine;
@@ -80,4 +74,6 @@
     };
 
   };
+
+  system.stateVersion = 5;
 }

@@ -30,7 +30,7 @@
       "whatsapp@beta"
       "nordvpn"
       "blender"
-
+      "teamviewer"
     ];
     onActivation.cleanup = "zap";
     onActivation.autoUpdate = true;

@@ -15,7 +15,7 @@
   };
 
   services.nix-daemon.enable = true;
-  programs.zsh.enable = true; # default shell on catalina
+  programs.zsh.enable = true;
 
   nix = {
     package = pkgs.nix;
@@ -93,7 +93,8 @@
       };
     in
     pkgs.lib.mkForce ''
-      # Set up applications.
+      # Code from Gist: https://gist.github.com/elliottminns/211ef645ebd484eb9a5228570bb60ec3
+      # Converts all symlinks in /Applications to hard links
       echo "setting up /Applications..." >&2
       rm -rf /Applications/Nix\ Apps
       mkdir -p /Applications/Nix\ Apps

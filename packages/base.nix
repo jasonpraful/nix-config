@@ -9,6 +9,7 @@
       asciinema
       azure-cli
       cloudflared
+      coreutils
       gh
       gitleaks
       git
@@ -18,11 +19,10 @@
       jq
       k9s
       imagemagick
-      minikube
       mkcert
       mkdocs
       mongosh
-      vim
+      neovim
       nixpkgs-fmt
       pixman
       pkg-config
@@ -36,12 +36,15 @@
 
       terraform
       kubectl
+      kubectx
+      kind
+      minikube
       kubernetes-helm
       k9s
 
       pyenv
       python312
-
+      
       sshpass
       stripe-cli
       tesseract
@@ -49,7 +52,8 @@
       tree
       watchman
       wget
-
+      nmap 
+      
       yq
       git-credential-manager
       git-crypt

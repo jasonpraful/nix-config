@@ -1,5 +1,8 @@
 *.key filter=git-crypt diff=git-crypt
 **/*.rayconfig filter=git-crypt diff=git-crypt
 assets/iterm2.itermexport filter=git-crypt diff=git-crypt
+iterm2.itermexport filter=git-crypt diff=git-crypt
+gitconfig filter=git-crypt diff=git-crypt
 assets/brewlist.txt filter=git-crypt diff=git-crypt
+brewlist.txt filter=git-crypt diff=git-crypt
 .gitattributes !filter !diff

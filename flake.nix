@@ -2,9 +2,7 @@
   description = "JP Nix Config";
   inputs = {
     nix-homebrew.url = "github:zhaofengli-wip/nix-homebrew";
-    nixpkgs.url = "github:NixOS/nixpkgs/8809585e6937d0b07fc066792c8c9abf9c3fe5c4";
-    # Unstable is currently broken.
-    #nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     nix-darwin.url = "github:LnL7/nix-darwin";
     nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
     nix-nil.url = "github:oxalica/nil";

@@ -1,11 +1,22 @@
 { pkgs
 , config
+, lib
 , machine
 , home-manager
 , ...
 }@inputs:
 {
-  imports = [ (home-manager.darwinModules.home-manager) ];
+  imports = [
+    home-manager.darwinModules.home-manager
+    # (
+    #   { pkgs, config, inputs, ... }:
+    #   {
+    #     home-manager.sharedModules = [
+    #       mac-app-util.homeManagerModules.default
+    #     ];
+    #   }
+    # )
+  ];
 
   nixpkgs = {
     hostPlatform = "aarch64-darwin";
@@ -72,6 +83,19 @@
       minimize-to-application = false;
       show-process-indicators = true;
       show-recents = true;
+      persistent-apps = [
+        "/Applications/Arc.app"
+        "/System/Applications/Messages.app"
+        "/System/Applications/Calendar.app"
+        "/System/Applications/Facetime.app"
+        "/System/Applications/Notes.app"
+        "/System/Applications/App Store.app"
+        "/Applications/WhatsApp.app"
+        "${machine.homedir}/Applications/Home Manager Trampolines/Obsidian.app"
+        "${machine.homedir}/Applications/Home Manager Trampolines/Visual Studio Code.app"
+        "${machine.homedir}/Applications/Home Manager Trampolines/iTerm2.app"
+        "/System/Applications/System Settings.app"
+      ];
     };
 
   };
@@ -84,25 +108,14 @@
   system.stateVersion = 5;
 
 
-  system.activationScripts.applications.text =
-    let
-      env = pkgs.buildEnv {
-        name = "system-applications";
-        paths = config.environment.systemPackages;
-        pathsToLink = "/Applications";
-      };
-    in
-    pkgs.lib.mkForce ''
-      # Code from Gist: https://gist.github.com/elliottminns/211ef645ebd484eb9a5228570bb60ec3
-      # Converts all symlinks in /Applications to hard links
-      echo "setting up /Applications..." >&2
-      rm -rf /Applications/Nix\ Apps
-      mkdir -p /Applications/Nix\ Apps
-      find ${env}/Applications -maxdepth 1 -type l -exec readlink '{}' + |
-      while read -r src; do
-        app_name=$(basename "$src")
-        echo "copying $src" >&2
-        ${pkgs.mkalias}/bin/mkalias "$src" "/Applications/Nix Apps/$app_name"
-      done
-    '';
+
+
+  system.activationScripts.postUserActivation.text = ''
+    apps_source="${config.system.build.applications}/Applications"
+    moniker="Nix Trampolines"
+    app_target_base="$HOME/Applications"
+    app_target="$app_target_base/$moniker"
+    mkdir -p "$app_target"
+    ${pkgs.rsync}/bin/rsync --archive --checksum --chmod=-w --copy-unsafe-links --delete "$apps_source/" "$app_target"
+  '';
 }

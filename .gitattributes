@@ -1,5 +1,6 @@
-assets/iterm2.itermexport filter=git-crypt diff=git-crypt
 *.key filter=git-crypt diff=git-crypt
+**/*.rayconfig filter=git-crypt diff=git-crypt
+assets/iterm2.itermexport filter=git-crypt diff=git-crypt
 assets/brewlist.txt filter=git-crypt diff=git-crypt
 packages/git.nix filter=git-crypt diff=git-crypt
 packages/git.nix filter=git-crypt diff=git-crypt

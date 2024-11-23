@@ -28,6 +28,7 @@
       pkg-config
 
       nodejs
+      volta
       openjdk
       openjpeg
       openssl

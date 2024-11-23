@@ -84,6 +84,7 @@
       show-process-indicators = true;
       show-recents = true;
       persistent-apps = [
+        "/System/Applications/Launchpad.app"
         "/Applications/Arc.app"
         "/System/Applications/Messages.app"
         "/System/Applications/Calendar.app"

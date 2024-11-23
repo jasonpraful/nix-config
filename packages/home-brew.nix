@@ -17,6 +17,7 @@
       "font-hack-nerd-font"
       "amazon-q"
       "docker"
+      "disk-drill"
       "logi-options+"
       "1password"
       "1password-cli"
@@ -31,6 +32,7 @@
       "nordvpn"
       "blender"
       "teamviewer"
+      "th-ch/youtube-music/youtube-music"
     ];
     onActivation.cleanup = "zap";
     onActivation.autoUpdate = true;

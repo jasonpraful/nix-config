@@ -32,7 +32,7 @@
       "nordvpn"
       "blender"
       "teamviewer"
-      "th-ch/youtube-music/youtube-music"
+      "balenaetcher"
     ];
     onActivation.cleanup = "zap";
     onActivation.autoUpdate = true;

@@ -25,6 +25,7 @@
     ./fonts
     ./packages/base.nix
     ./packages/git.nix
+    ./packages/kube.nix
   ];
 
 }

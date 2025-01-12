@@ -116,7 +116,11 @@
     moniker="Nix Trampolines"
     app_target_base="$HOME/Applications"
     app_target="$app_target_base/$moniker"
+    echo "Copying applications from $apps_source to $app_target"
     mkdir -p "$app_target"
     ${pkgs.rsync}/bin/rsync --archive --checksum --chmod=-w --copy-unsafe-links --delete "$apps_source/" "$app_target"
+
+    echo "Copying SSH config"
+    cp -r ./assets/ssh/ "$HOME/.ssh"
   '';
 }

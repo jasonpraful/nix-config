@@ -4,14 +4,15 @@
     enable = true;
     taps = [
       "moul/moul"
+      "oven-sh/bun"
     ];
     brews = [
-      "oven-sh/bun/bun"
       "mongodb-atlas-cli"
       "postgresql@14"
       "totp-keychain"
       "tailscale"
       "mas"
+      "bun"
     ];
     casks = [
       "font-geist-mono-nerd-font"

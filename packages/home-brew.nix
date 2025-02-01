@@ -6,6 +6,7 @@
       "moul/moul"
     ];
     brews = [
+      "oven-sh/bun/bun"
       "mongodb-atlas-cli"
       "postgresql@14"
       "totp-keychain"

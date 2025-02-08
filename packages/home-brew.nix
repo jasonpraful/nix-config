@@ -10,7 +10,6 @@
       "mongodb-atlas-cli"
       "postgresql@14"
       "totp-keychain"
-      "tailscale"
       "mas"
       "bun"
     ];
@@ -29,11 +28,12 @@
       "raycast"
       "adapter"
       "proxyman"
+      "tailscale"
+      "rustdesk"
       "runjs"
       "whatsapp@beta"
       "nordvpn"
       "blender"
-      "teamviewer"
       "balenaetcher"
     ];
     onActivation.cleanup = "zap";

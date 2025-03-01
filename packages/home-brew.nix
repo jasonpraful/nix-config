@@ -16,6 +16,7 @@
     casks = [
       "font-geist-mono-nerd-font"
       "font-hack-nerd-font"
+      "adobe-acrobat-reader"
       "amazon-q"
       "docker"
       "disk-drill"

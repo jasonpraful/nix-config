@@ -52,6 +52,15 @@
         "https://dev.azure.com" = {
           useHttpPath = true;
         };
+        "https://github.com" = {
+          useHttpPath = true;
+        };
+        "https://git.jasonpraful.co.uk" = {
+          useHttpPath = true;
+        };
+        "https://gitlab.com" = {
+          useHttpPath = true;
+        };
       };
     };
   };

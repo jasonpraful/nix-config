@@ -31,6 +31,7 @@
   nix = {
     package = pkgs.nix;
     settings = {
+      sandbox = false;
       experimental-features = "nix-command flakes";
       trusted-users = [ "root" machine.username ];
 
@@ -121,6 +122,7 @@
     ${pkgs.rsync}/bin/rsync --archive --checksum --chmod=-w --copy-unsafe-links --delete "$apps_source/" "$app_target"
 
     echo "Copying SSH config"
-    cp -r ./assets/ssh/ "$HOME/.ssh"
+    sudo cp -r ${./assets/ssh} "$HOME/.ssh"
   '';
+
 }

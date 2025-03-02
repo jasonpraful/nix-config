@@ -12,6 +12,8 @@
       "totp-keychain"
       "mas"
       "bun"
+      "readline"
+      "xz"
     ];
     casks = [
       "font-geist-mono-nerd-font"

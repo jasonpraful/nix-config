@@ -121,8 +121,14 @@
     mkdir -p "$app_target"
     ${pkgs.rsync}/bin/rsync --archive --checksum --chmod=-w --copy-unsafe-links --delete "$apps_source/" "$app_target"
 
-    echo "Copying SSH config"
-    sudo cp -r ${./assets/ssh} "$HOME/.ssh"
+    echo "Copying SSH config from ${./assets/ssh} to $HOME/.ssh"
+    mkdir -p "$HOME/.ssh"
+    sudo ${pkgs.rsync}/bin/rsync --archive --checksum --chmod=600 "${./assets/ssh}/" "$HOME/.ssh/"
+    sudo find "$HOME/.ssh/" -type f -exec sudo chmod 600 {} \;
+    sudo chmod 700 "$HOME/.ssh"
+    sudo chown -R ${machine.username}:staff "$HOME/.ssh/"
+    echo "SSH config permissions set to 600 and directory to 700"
+    echo "Post User Activation scripts completed successfully"
   '';
 
 }

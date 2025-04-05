@@ -56,7 +56,7 @@
   time = {
     timeZone = "Europe/London";
   };
-  security.pam.enableSudoTouchIdAuth = true;
+  security.pam.services.sudo_local.touchIdAuth = true;
   system.defaults = {
     trackpad.Clicking = true;
     loginwindow.GuestEnabled = false;

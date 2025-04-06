@@ -22,6 +22,7 @@
       "amazon-q"
       "docker"
       "disk-drill"
+      "google-chrome"
       "logi-options+"
       "1password"
       "1password-cli"
@@ -38,6 +39,7 @@
       "nordvpn"
       "blender"
       "balenaetcher"
+      "visual-studio-code"
     ];
     onActivation.cleanup = "zap";
     onActivation.autoUpdate = true;

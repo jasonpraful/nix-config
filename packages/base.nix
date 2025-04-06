@@ -2,8 +2,6 @@
 {
   home.packages = with pkgs;
     [
-      # Config for VSCode - Synced to Cloud
-      vscode
       obsidian
       awscli
       asciinema
@@ -45,7 +43,7 @@
 
       pyenv
       python312
-      
+
       sshpass
       stripe-cli
       tesseract
@@ -53,8 +51,8 @@
       tree
       watchman
       wget
-      nmap 
-      
+      nmap
+
       yq
       git-credential-manager
       git-crypt
@@ -62,11 +60,10 @@
       rectangle
       home-manager
       nil
-      google-chrome
       postman
       pgadmin4
 
-      
+
     ];
 }
 

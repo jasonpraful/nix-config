@@ -40,6 +40,7 @@
       "blender"
       "balenaetcher"
       "visual-studio-code"
+      "cursor"
     ];
     onActivation.cleanup = "zap";
     onActivation.autoUpdate = true;
@@ -50,7 +51,6 @@
       "Pages" = 409201541;
       "Keynote" = 409183694;
       "Numbers" = 409203825;
-      "iMovie" = 408981434;
       "1PW Safari" = 1569813296;
     };
   };

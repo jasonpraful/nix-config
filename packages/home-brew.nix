@@ -46,6 +46,7 @@
     onActivation.autoUpdate = true;
     onActivation.upgrade = true;
     masApps = {
+      "Okta Verify" = 490179405;
       "XCode" = 497799835;
       "RarExtractor" = 1071663619;
       "Pages" = 409201541;

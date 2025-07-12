@@ -55,6 +55,7 @@
     timeZone = "Europe/London";
   };
   security.pam.services.sudo_local.touchIdAuth = true;
+  system.primaryUser = "jasonpraful";
   system.defaults = {
     trackpad.Clicking = true;
     loginwindow.GuestEnabled = false;
@@ -110,7 +111,7 @@
 
 
 
-  system.activationScripts.postUserActivation.text = ''
+  system.activationScripts.activateSettings.text = ''
     apps_source="${config.system.build.applications}/Applications"
     moniker="Nix Trampolines"
     app_target_base="$HOME/Applications"

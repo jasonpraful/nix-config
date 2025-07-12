@@ -5,7 +5,8 @@
     taps = [
       "moul/moul"
       "oven-sh/bun"
-    ];
+      "hashicorp/tap"
+   ];
     brews = [
       "mongodb-atlas-cli"
       "postgresql@14"
@@ -14,6 +15,7 @@
       "bun"
       "readline"
       "xz"
+      "terraform-ls"
     ];
     casks = [
       "font-geist-mono-nerd-font"

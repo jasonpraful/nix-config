@@ -16,6 +16,7 @@
       "readline"
       "xz"
       "terraform-ls"
+      "cmake"
     ];
     casks = [
       "font-geist-mono-nerd-font"

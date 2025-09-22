@@ -1,5 +1,6 @@
 { pkgs, nix-homebrew, ... }:
 {
+  nix-homebrew.autoMigrate = true;
   homebrew = {
     enable = true;
     taps = [
@@ -16,6 +17,7 @@
       "readline"
       "xz"
       "terraform-ls"
+      "git-crypt"
       "cmake"
     ];
     casks = [
@@ -23,6 +25,7 @@
       "font-hack-nerd-font"
       "adobe-acrobat-reader"
       "amazon-q"
+      "dbeaver-community"
       "docker"
       "disk-drill"
       "google-chrome"
@@ -30,10 +33,11 @@
       "1password"
       "1password-cli"
       "menumeters"
-      "microsoft-office"
+      "microsoft-teams"
       "notion"
       "raycast"
       "adapter"
+      "postman"
       "proxyman"
       "tailscale"
       "rustdesk"
@@ -41,7 +45,6 @@
       "whatsapp@beta"
       "nordvpn"
       "blender"
-      "balenaetcher"
       "visual-studio-code"
       "cursor"
     ];

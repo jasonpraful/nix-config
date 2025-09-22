@@ -3,7 +3,7 @@
   home.packages = with pkgs;
     [
       obsidian
-      awscli
+      awscli2
       asciinema
       azure-cli
       cloudflared
@@ -11,7 +11,6 @@
       gh
       gitleaks
       git
-      git-crypt
       go
       iterm2
       jq
@@ -60,7 +59,6 @@
       rectangle
       home-manager
       nil
-      postman
       pgadmin4
 
 

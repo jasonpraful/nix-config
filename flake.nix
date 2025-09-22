@@ -14,7 +14,7 @@
   };
   outputs = { self, nix-darwin, nixpkgs, nix-homebrew, home-manager, ... }@inputs:
     {
-      darwinConfigurations."mini" =
+      darwinConfigurations."jasonpraful-mini" =
         let
           machine = import ./machines/mini.nix;
           inherit (machine) system;

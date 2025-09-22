@@ -28,6 +28,7 @@
       "dbeaver-community"
       "docker"
       "disk-drill"
+      "ghostty"
       "google-chrome"
       "logi-options+"
       "1password"

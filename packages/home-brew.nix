@@ -48,7 +48,6 @@
       "visual-studio-code"
       "cursor"
     ];
-    onActivation.cleanup = "zap";
     onActivation.autoUpdate = true;
     onActivation.upgrade = true;
     masApps = {

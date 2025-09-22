@@ -33,6 +33,7 @@
       "logi-options+"
       "1password"
       "1password-cli"
+      "macs-fan-control"
       "menumeters"
       "microsoft-teams"
       "notion"

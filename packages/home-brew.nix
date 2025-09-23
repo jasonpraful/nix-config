@@ -23,6 +23,7 @@
     casks = [
       "font-geist-mono-nerd-font"
       "font-hack-nerd-font"
+      "font-meslo-for-powerlevel10k"
       "adobe-acrobat-reader"
       "amazon-q"
       "dbeaver-community"

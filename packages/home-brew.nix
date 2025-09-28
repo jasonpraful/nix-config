@@ -32,7 +32,6 @@
       "figma@beta"
       "ghostty"
       "google-chrome"
-      "helium-browser"
       "logi-options+"
       "1password"
       "1password-cli"
@@ -52,6 +51,7 @@
       "blender"
       "visual-studio-code"
       "cursor"
+      "slack@beta"
     ];
     onActivation.autoUpdate = true;
     onActivation.upgrade = true;

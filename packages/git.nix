@@ -2,10 +2,6 @@
 {
   programs.git = {
     enable = true;
-    userName = "Jason Praful";
-    userEmail = "jason.praful@gmail.com";
-
-    delta.enable = true;
 
     ignores = [
       "**/.vscode/settings.json"
@@ -27,26 +23,29 @@
       }
     ];
 
-
-    extraConfig = {
-      "sendpack" = {
+    settings = {
+      user = {
+        name = "Jason Praful";
+        email = "jason.praful@gmail.com";
+      };
+      sendpack = {
         sideband = false;
       };
-      "push" = {
+      push = {
         autoSetupRemote = true;
       };
-      "init" = {
+      init = {
         defaultBranch = "main";
       };
-      "filter" = {
-        "lfs" = {
+      filter = {
+        lfs = {
           clean = "git-lfs clean -- %f";
           smudge = "git-lfs smudge -- %f";
           process = "git-lfs filter-process";
           required = true;
         };
       };
-      "credential" = {
+      credential = {
         helper = "manager";
         credentialStore = "keychain";
         "https://dev.azure.com" = {
@@ -65,4 +64,8 @@
     };
   };
 
+  programs.delta = {
+    enable = true;
+    enableGitIntegration = true;
+  };
 }

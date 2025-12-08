@@ -46,6 +46,7 @@
       "tailscale"
       "rustdesk"
       "runjs"
+      "superwhisper"
       "whatsapp@beta"
       "nordvpn"
       "blender"

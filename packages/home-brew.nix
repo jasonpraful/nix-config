@@ -7,6 +7,7 @@
       "moul/moul"
       "oven-sh/bun"
       "hashicorp/tap"
+      "teamookla/speedtest"
    ];
     brews = [
       "mongodb-atlas-cli"
@@ -19,6 +20,8 @@
       "terraform-ls"
       "git-crypt"
       "cmake"
+      "speedtest"
+      "opencode"
     ];
     casks = [
       "font-geist-mono-nerd-font"
@@ -26,6 +29,7 @@
       "font-meslo-for-powerlevel10k"
       "adobe-acrobat-reader"
       "amazon-q"
+      "comet"
       "dbeaver-community"
       "docker"
       "disk-drill"
@@ -39,11 +43,12 @@
       "menumeters"
       "microsoft-teams"
       "notion"
+      "opencode-desktop"
       "raycast"
       "adapter"
       "postman"
       "proxyman"
-      "tailscale"
+      "tailscale-app"
       "rustdesk"
       "runjs"
       "superwhisper"
@@ -53,11 +58,14 @@
       "visual-studio-code"
       "cursor"
       "slack@beta"
+      "teamviewer"
+      "antigravity"
+      "claude"
+      "Superhuman"
     ];
     onActivation.autoUpdate = true;
     onActivation.upgrade = true;
     masApps = {
-      "Okta Verify" = 490179405;
       "XCode" = 497799835;
       "RarExtractor" = 1071663619;
       "Pages" = 409201541;

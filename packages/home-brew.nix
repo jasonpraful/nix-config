@@ -60,6 +60,7 @@
       "visual-studio-code"
       "cursor"
       "slack@beta"
+      "steipete/tap/codexbar"
       "teamviewer"
       "antigravity"
       "claude"

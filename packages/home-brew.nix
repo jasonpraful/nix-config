@@ -24,6 +24,7 @@
       "speedtest"
       "opencode"
       "openai-whisper"
+      "pass"
     ];
     casks = [
       "font-geist-mono-nerd-font"

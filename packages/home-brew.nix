@@ -37,6 +37,7 @@
       "figma@beta"
       "ghostty"
       "google-chrome"
+      "logi-options+"
       "1password"
       "1password-cli"
       "macs-fan-control"

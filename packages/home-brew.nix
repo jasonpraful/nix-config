@@ -53,7 +53,7 @@
       "tailscale-app"
       "rustdesk"
       "runjs"
-      "superwhisper"
+      "wispr-flow"
       "whatsapp@beta"
       "nordvpn"
       "blender"

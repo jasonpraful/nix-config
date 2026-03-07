@@ -51,7 +51,6 @@
       "postman"
       "proxyman"
       "tailscale-app"
-      "rustdesk"
       "runjs"
       "wispr-flow"
       "whatsapp@beta"

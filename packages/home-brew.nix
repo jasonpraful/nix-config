@@ -25,6 +25,9 @@
       "opencode"
       "openai-whisper"
       "pass"
+      "fastlane"
+      "swiftformat"
+      "cocoapods"
     ];
     casks = [
       "font-geist-mono-nerd-font"

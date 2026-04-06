@@ -16,6 +16,7 @@
       "mas"
       "bun"
       "ffmpeg"
+      "gh"
       "readline"
       "xz"
       "terraform-ls"

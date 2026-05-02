@@ -73,12 +73,6 @@
     onActivation.autoUpdate = true;
     onActivation.upgrade = true;
     masApps = {
-      "XCode" = 497799835;
-      "RarExtractor" = 1071663619;
-      "Pages" = 409201541;
-      "Keynote" = 409183694;
-      "Numbers" = 409203825;
-      "1PW Safari" = 1569813296;
     };
   };
 }

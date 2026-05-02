@@ -92,7 +92,6 @@
         "/Applications/WhatsApp.app"
         "/Applications/Cursor.app"
         "${machine.homedir}/Applications/Home Manager Trampolines/Obsidian.app"
-        "${machine.homedir}/Applications/Home Manager Trampolines/iTerm2.app"
         "/System/Applications/System Settings.app"
       ];
     };

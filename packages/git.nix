@@ -2,6 +2,7 @@
 {
   programs.git = {
     enable = true;
+    signing.format = null;
 
     ignores = [
       "**/.vscode/settings.json"

@@ -68,6 +68,7 @@
       "antigravity"
       "claude"
       "Superhuman"
+      "iterm2"
     ];
     onActivation.autoUpdate = true;
     onActivation.upgrade = true;

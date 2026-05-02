@@ -12,7 +12,6 @@
       gitleaks
       git
       go
-      iterm2
       jq
       k9s
       imagemagick

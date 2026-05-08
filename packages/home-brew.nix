@@ -37,6 +37,7 @@
       "kiro-cli"
       "comet"
       "dbeaver-community"
+      "discord"
       "docker-desktop"
       "disk-drill"
       "figma@beta"

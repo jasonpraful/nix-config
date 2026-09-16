@@ -1,4 +1,4 @@
-{ pkgs, config, ... }:
+{ pkgs, config, lib, ... }:
 {
   home.packages = with pkgs;
     [
@@ -32,7 +32,7 @@
       ripgrep
 
       terraform
-      kubectl
+      (lib.hiPrio kubectl)
       kubectx
       kind
       minikube
@@ -55,7 +55,6 @@
       git-credential-manager
       git-crypt
       keycastr
-      rectangle
       home-manager
       nil
       pgadmin4

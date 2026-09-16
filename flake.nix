@@ -2,7 +2,7 @@
   description = "JP Nix Config";
   inputs = {
     nix-homebrew.url = "github:zhaofengli-wip/nix-homebrew";
-    nix-homebrew.inputs.brew-src.url = "github:Homebrew/brew/5.1.10";
+    nix-homebrew.inputs.brew-src.url = "github:Homebrew/brew/7.0.3";
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     nix-darwin.url = "github:LnL7/nix-darwin";
     nix-darwin.inputs.nixpkgs.follows = "nixpkgs";

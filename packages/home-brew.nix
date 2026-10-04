@@ -31,6 +31,7 @@
       "cocoapods"
     ];
     casks = [
+      "android-studio"
       "font-geist-mono-nerd-font"
       "font-hack-nerd-font"
       "font-meslo-for-powerlevel10k"

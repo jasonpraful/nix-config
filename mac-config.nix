@@ -84,14 +84,13 @@
       show-process-indicators = true;
       show-recents = true;
       persistent-apps = [
-        "/Applications/Comet.app"
         "/System/Applications/Messages.app"
         "/System/Applications/Calendar.app"
         "/System/Applications/Facetime.app"
         "/System/Applications/App Store.app"
-        "/Applications/WhatsApp.app"
+        "/Applications/T3 Code (Nightly).app"
+        "/Applications/Google Chrome.app"
         "/Applications/Cursor.app"
-        "${machine.homedir}/Applications/Home Manager Trampolines/Obsidian.app"
         "/System/Applications/System Settings.app"
       ];
     };
